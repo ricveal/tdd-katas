@@ -1,0 +1,34 @@
+{
+  "name": "tdd-katas",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "author": "Ricardo Vega | @ricveal <rvalonso@minsait.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wix/tdd-katas.git"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "watch": "jest --watch"
+  },
+  "jest": {
+    "roots": ["<rootDir>/node_modules/", "<rootDir>/src/"],
+    "resetMocks": true,
+    "resetModules": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0",
+    "prettier": "^1.15.2"
+  }
+}
